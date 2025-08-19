@@ -22,7 +22,7 @@ class StoryGenerator:
         # <<< CHANGED: This entire method is updated for Google Gemini
         google_api_key = os.getenv("GEMINI_API_KEY")
         if not google_api_key:
-            raise ValueError("GEMINI_API_KEY not found in environment variables. Please set it in your .env file.")
+            raise ValueError("GEMINI_API_KEY not found in environment variables.")
 
         # We instantiate the Google model here.
         # "gemini-1.5-flash-latest" is the recommended name for the 1.5 Flash model.
